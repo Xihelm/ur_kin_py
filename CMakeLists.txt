@@ -93,9 +93,7 @@ include_directories(${PYTHON_INCLUDE_DIRS})
 add_library(ur5_kin_py 
     src/ur_kin_py.cpp)
 target_link_libraries(ur5_kin_py 
-  ur5_kin
   ${PYTHON_LIBRARIES} 
-  boost_numpy 
   ${catkin_LIBRARIES}
   ${Boost_LIBRARIES}
 )
@@ -107,9 +105,7 @@ set_target_properties(ur5_kin_py PROPERTIES
 add_library(ur10_kin_py 
     src/ur_kin_py.cpp)
 target_link_libraries(ur10_kin_py 
-  ur10_kin
   ${PYTHON_LIBRARIES} 
-  boost_numpy 
   ${catkin_LIBRARIES}
   ${Boost_LIBRARIES}
 )
